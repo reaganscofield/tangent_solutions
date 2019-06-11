@@ -13,7 +13,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
         def create(self, validate_data):
             print(validate_data)
             employee = Employee.objects.create(
-                employee_number = validate_data["emp_number"],
+                emp_number = validate_data["emp_number"],
                 phone_number = validate_data["phone_number"],
                 first_name = validate_data["first_name"],
                 last_name = validate_data["last_name"],

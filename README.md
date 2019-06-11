@@ -101,3 +101,10 @@ view single LEAVE in JSON FORMAT according to given primary key in the url '/1/'
 ```
     http://127.0.0.1:8000/api/leaves/1/
 ```
+
+
+# RUNNING UNIT TESTS
+
+```
+    $ python manage.py test
+```

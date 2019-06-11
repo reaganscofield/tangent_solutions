@@ -5,5 +5,3 @@ DB_PASSWORD = 'postgres'
 DB_HOST = 'localhost'
 DB_PORT = ''
 
-
-#####
