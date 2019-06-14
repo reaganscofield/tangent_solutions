@@ -5,6 +5,7 @@ from .models import Employee, Leave
 class EmployeeSerializer(serializers.ModelSerializer):
     leave_ids = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     emp_number = serializers.CharField(required=True, allow_null=False, allow_blank=False)
+    emp_number = serializers.RegexField(regex=r'^[A-Z-0-9\d]+$', required=True, max_length=7)
 
     class Meta:
         model = Employee
