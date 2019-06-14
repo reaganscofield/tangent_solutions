@@ -50,6 +50,7 @@ with your database password
 create env.py file and open it with vim 
 
 ```
+    $ cd tagent_project
     $ touch env.py
     $ vim env.py
 ```
@@ -70,7 +71,6 @@ add this code and save it
 please make sure that you virtual_env still activated
 
 ```
-    $ cd tagent_project
     $ python manage.py makemigrations
     $ python manage.py migrate
     $ python manage.py runserver
