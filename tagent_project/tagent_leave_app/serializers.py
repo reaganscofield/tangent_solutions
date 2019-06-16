@@ -12,7 +12,6 @@ class EmployeeSerializer(serializers.ModelSerializer):
         fields = ("id", "emp_number", "phone_number", "first_name", "last_name", "leave_ids")
 
         def create(self, validate_data):
-            print(validate_data)
             employee = Employee.objects.create(
                 emp_number = validate_data["emp_number"],
                 phone_number = validate_data["phone_number"],
